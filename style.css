@@ -1,0 +1,949 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+}
+
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    opacity: 0.4rem;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.open {
+
+    color: white;
+    font-size: 2.5rem;
+    display: none;
+}
+
+
+.close {
+    color: white;
+    font-size: 2.5rem;
+    display: none;
+}
+
+
+
+
+
+
+
+.logo img {
+    height: 3.5rem;
+    padding: 5px 10px;
+
+}
+
+
+
+
+
+ul {
+    display: flex;
+    margin-left: 4rem;
+}
+
+
+ul li {
+    list-style: none;
+    padding: 0px 15px;
+}
+
+
+
+ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 3px 20px;
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+
+
+
+.hero {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+
+
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    background: url("food-4k-m37wpodzrcbv5gvw.jpg");
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    opacity: 0.4rem;
+    height: 650px;
+    width: 100%;
+
+
+
+
+}
+
+.hero h1 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 4.3rem;
+}
+
+
+.hero p {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.hero button {
+
+
+    margin: 10px;
+
+
+    padding: 9px 9px;
+
+
+
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    border-radius: 21px;
+
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    padding: 3rem;
+
+}
+
+.box img {
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.box h3 {
+
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+
+
+.box p {
+    padding: 15px 5px;
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+
+.box button {
+
+    font-size: 1.5rem;
+
+    color: #000000;
+    border-radius: 25px;
+    padding: 7px 8px;
+    margin: 15px;
+    text-transform: capitalize;
+    display: block;
+    margin: 15px auto;
+    background: none;
+}
+
+
+
+
+
+
+.btn:hover {
+    background-color: red;
+}
+
+
+.center {
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+
+.box {
+    padding: 60px 5px;
+    margin: 10px 20px;
+    border-radius: 15px;
+    background: #fff1c8;
+
+
+}
+
+.clients {
+
+    position: relative;
+    padding: 10px 10x;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.clients-container {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.color {
+    color: white;
+    font-size: 4.5rem;
+    padding-bottom: 70px;
+
+    text-transform: capitalize;
+}
+
+
+
+.logos {
+    margin: 10px 20px;
+    padding: 5px 5px;
+}
+
+.logos img {
+    height: 5rem;
+}
+
+.clients::before {
+    content: "";
+    position: absolute;
+    background: url("Clients-Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    opacity: 0.4rem;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+
+
+
+
+
+
+.contact {
+    padding: 30px 0px;
+    position: relative;
+
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    background: url("meeting.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    opacity: 0.4rem;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+
+
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container form {
+    width: 40rem;
+    text-transform: capitalize;
+}
+
+
+
+.field {
+    margin: 25px 0px;
+    padding: 5px 5px;
+}
+
+
+
+.field textarea {
+    width: 100%;
+    height: 14rem;
+    resize: none;
+    border: 3px solid black;
+}
+
+
+
+
+.field input {
+    width: 100%;
+    height: 2.3rem;
+    text-transform: capitalize;
+    border: 3px solid black;
+}
+
+
+.bt {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    border: 3px solid black;
+    text-transform: capitalize;
+    border-radius: 25px;
+}
+
+
+.bt:hover {
+    background-color: red;
+}
+
+
+.field label {
+    color: white;
+
+}
+
+
+
+
+
+/*tablet screen*/
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .navbar {
+        justify-content: space-evenly;
+    }
+
+    #Menu {
+        display: none;
+    }
+
+
+    ul {
+        position: absolute;
+        top: 5em;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.4);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        text-align: center;
+        width: 100%;
+        height: 65vh;
+
+        right: 0%;
+
+
+
+
+
+    }
+
+
+    .close {
+        display: none;
+    }
+
+    .open {
+        display: block;
+    }
+
+
+    .hero p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    ul li {
+        padding: 2rem;
+    }
+
+
+
+    ul li a {
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+
+
+
+    .hero h1 {
+
+        font-size: 50px;
+    }
+
+
+    .hero p {
+
+        font-size: 1.2rem;
+    }
+
+
+    .hero button {
+
+
+        margin: 10px;
+
+
+        padding: 9px 9px;
+
+
+
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        border-radius: 21px;
+
+        background: none;
+        border: 2px solid rgb(255, 255, 255);
+        color: white;
+    }
+
+
+    .container {
+
+        padding: 0rem;
+        flex-direction: column;
+    }
+
+    .box img {
+        height: 100px;
+
+
+    }
+
+    .box h3 {
+
+        text-align: center;
+        font-size: 1.5rem;
+
+        padding: 7pxpx;
+    }
+
+
+
+    .box p {
+        padding: 0px 0px;
+        margin: 7px 0px;
+
+        font-size: 1.1rem;
+    }
+
+
+    .box button {
+
+        font-size: 1rem;
+
+        color: #000000;
+        border-radius: 25px;
+        padding: 7px 8px;
+        margin: 15px;
+        text-transform: capitalize;
+        display: block;
+        margin: 15px auto;
+        background: none;
+    }
+
+
+
+
+
+
+    .center {
+        text-align: center;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+
+
+    .box {
+        padding: 15px 5px;
+        margin: 15px 0px;
+        border-radius: 15px;
+        background: #fff1c8;
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+    .clients {
+
+
+        padding: 0px 0x;
+
+
+
+    }
+
+
+
+
+
+    .clients-container {
+
+        margin: 0px;
+        flex-wrap: wrap;
+
+
+
+    }
+
+
+    .color {
+
+        font-size: 55.5px;
+        padding-bottom: 10pxpx;
+
+
+    }
+
+
+
+    .logos {
+        margin: 5px 5px;
+        padding: 5px 5px;
+    }
+
+    .logos img {
+        height: 90px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .contact-container form {
+        width: 20rem;
+
+    }
+
+
+
+    .field {
+        margin: 5px 5px;
+        padding: 5px 5px;
+    }
+
+
+
+    .field textarea {
+
+        height: 14rem;
+
+        border: 3px solid black;
+    }
+
+
+
+
+    .field input {
+        width: 100%;
+        height: 2.3rem;
+        text-transform: capitalize;
+        border: 3px solid black;
+    }
+
+
+    .bt {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        border: 3px solid black;
+        text-transform: capitalize;
+        border-radius: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/*mobile screen*/
+
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+    .navbar {
+        justify-content: space-evenly;
+
+    }
+
+    #Menu {
+        display: none;
+    }
+
+
+    ul {
+        position: absolute;
+        top: 5em;
+        flex-direction: column;
+
+        background-color: rgba(0, 0, 0, 0.4);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+
+        text-align: center;
+        width: 100%;
+        height: 65vh;
+
+        right: 0%;
+
+
+
+
+
+    }
+
+    ul li {
+        padding: 2rem;
+    }
+
+    ul li a {
+        font-size: 1.5rem;
+    }
+
+
+    .close {
+        display: none;
+    }
+
+    .open {
+        display: block;
+    }
+
+    ul li a {
+
+
+        padding: 0px 6px;
+        font-weight: bold;
+
+
+
+
+
+    }
+
+
+
+    ul {
+
+        margin: 0px 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .hero h1 {
+
+        font-size: 32px;
+    }
+
+
+    .hero p {
+
+        font-size: 1.2rem;
+    }
+
+
+
+    .hero button {
+        margin: 10px;
+        font-size: 1rem;
+
+        border-radius: 21px;
+        padding: 9px 9px;
+
+
+
+    }
+
+
+    .container {
+
+        padding: 0rem;
+        flex-direction: column;
+    }
+
+    .box img {
+        height: 100px;
+
+
+    }
+
+    .box h3 {
+
+        text-align: center;
+        font-size: 1.5rem;
+
+        padding: 7pxpx;
+    }
+
+
+
+    .box p {
+        padding: 0px 0px;
+        margin: 7px 0px;
+
+        font-size: 1.1rem;
+    }
+
+
+    .box button {
+
+        font-size: 1rem;
+
+        color: #000000;
+        border-radius: 25px;
+        padding: 7px 8px;
+        margin: 15px;
+        text-transform: capitalize;
+        display: block;
+        margin: 15px auto;
+        background: none;
+    }
+
+
+
+
+
+
+    .center {
+        text-align: center;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+
+
+    .box {
+        padding: 15px 5px;
+        margin: 15px 0px;
+        border-radius: 15px;
+        background: #fff1c8;
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+    .clients {
+
+
+        padding: 0px 0x;
+
+
+
+    }
+
+
+
+
+
+    .clients-container {
+
+        margin: 0px;
+        flex-wrap: wrap;
+
+
+
+    }
+
+
+    .color {
+
+        font-size: 55.5px;
+        padding-bottom: 10pxpx;
+
+
+    }
+
+
+
+    .logos {
+        margin: 5px 5px;
+        padding: 5px 5px;
+    }
+
+    .logos img {
+        height: 70px;
+    }
+
+
+
+
+
+
+
+
+
+    .contact-container {}
+
+    .contact-container form {
+        width: 20rem;
+
+    }
+
+
+
+    .field {
+        margin: 5px 5px;
+        padding: 5px 5px;
+    }
+
+
+
+    .field textarea {
+
+        height: 14rem;
+
+        border: 3px solid black;
+    }
+
+
+
+
+    .field input {
+        width: 100%;
+        height: 2.3rem;
+        text-transform: capitalize;
+        border: 3px solid black;
+    }
+
+
+    .bt {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+        border: 3px solid black;
+        text-transform: capitalize;
+        border-radius: 25px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 992px) and (max-width: 1024px) {
+
+    .container {
+
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar" id="home">
+        <div class="logo">
+            <img src="canva-red-and-yellow-catering-flat-illustrative-food-place-logo-rYbQJ_qtaz8 (1).png" alt="">
+        </div>
+
+        <ul id="Menu">
+            <li><a href="#home">home</a></li>
+            <li><a href="#clients">our clients</a></li>
+            <li><a href="#contact us">contact us </a></li>
+            <li><a href="#services">our services</a></li>
+        </ul>
+
+        <i onclick="showMenu()" id="show" class="fa-solid fa-bars open"></i>
+        <i onclick="hideMenu()" id="hide" class="fa-solid fa-x close"></i>
+    </nav>
+
+    <script>
+        let Menu = document.getElementById("Menu");
+        let show = document.getElementById("show");
+        let hide = document.getElementById("hide");
+
+
+        function showMenu() {
+            Menu.style.display = 'block';
+            show.style.display = 'none';
+            hide.style.display = 'block';
+        }
+
+
+        function hideMenu() {
+            Menu.style.display = 'none';
+            show.style.display = 'block';
+            hide.style.display = 'none';
+        } 
+    </script>
+
+
+    <section class="hero">
+        <h1>welcome to my website</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius iusto cumque non delectus ab maxime est
+            commodi quos </p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius iusto cumque non delectus ab maxime est
+            commodi quos </p>
+        <button class="btn">order now</button>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="services" id="services">
+        <h1 class="center">our services</h1>
+
+        <div class="container">
+            <div class="box">
+                <img src="burger-king-meal.jpg.webp" alt="">
+                <h3>beef burger</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consequatur, labore aperiam
+                    voluptatibus dolorum ullam consectetur dolorem vitae magni eius id asperiores iste. Veritatis
+                    nostrum soluta earum, incidunt qui et.</p>
+                <button class="btn">order now</button>
+            </div>
+            <div class="box">
+                <img src="meat-and-more-singapore.png" alt="">
+                <h3>pizza</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consequatur, labore aperiam
+                    voluptatibus dolorum ullam consectetur dolorem vitae magni eius id asperiores iste. Veritatis
+                    nostrum soluta earum, incidunt qui et.</p>
+                <button class="btn">order now</button>
+            </div>
+            <div class="box">
+                <img src="maxresdefault.jpg" alt="">
+                <h3>chicken roll</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur consequatur, labore aperiam
+                    voluptatibus dolorum ullam consectetur dolorem vitae magni eius id asperiores iste. Veritatis
+                    nostrum soluta earum, incidunt qui et.</p>
+                <button class="btn">order now</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="clients" id="clients">
+        <h1 class=" color">our clients</h1>
+
+        <div class="clients-container">
+            <div class="logos">
+                <img src="facebook.png" alt="">
+            </div>
+            <div class="logos">
+                <img src="tiktok.png" alt="">
+            </div>
+
+            <div class="logos">
+                <img src="whatsapp.png" alt="">
+            </div>
+            <div class="logos">
+                <img src="youtube.png" alt="">
+            </div>
+
+            <div class="logos">
+                <img src="twitter.png" alt="">
+            </div>
+            <div class="logos">
+                <img src="microsoft.png" alt="">
+            </div>
+            <div class="logos">
+                <img src="chat-gpt.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="contact" id="contact us">
+        <h1 class="center">contact us</h1>
+
+        <div class="contact-container">
+            <form action="">
+                <div class="field">
+                    <label for="name">name</label>
+                    <input type="text">
+                </div>
+                <div class="field">
+                    <label for="email">email</label>
+                    <input type="text">
+                </div>
+                <div class="field">
+                    <label for="password">password</label>
+                    <input type="password">
+                </div>
+                <div class="field">
+                    <label for="message">message</label>
+                    <textarea name="message" id=""></textarea>
+                </div>
+                <button class="bt">submit</button>
+
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
